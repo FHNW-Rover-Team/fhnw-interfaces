@@ -1,0 +1,7 @@
+float32 voltage
+float32 current
+uint32 state_of_charge
+int16 bms_temperature
+int16 battery_temperature_1
+int16 battery_temperature_2
+uint16[] cell_voltage

@@ -1,0 +1,5 @@
+float32 turning_radius
+float32 tangential_velocity
+float32 crab_angle
+float32 zero_offset
+float32 speed_stage

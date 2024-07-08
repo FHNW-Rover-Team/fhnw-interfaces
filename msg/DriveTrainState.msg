@@ -1,0 +1,19 @@
+int16 left_front_speed
+int16 left_rear_speed
+int16 right_front_speed
+int16 right_rear_speed
+
+int32 left_front_position
+int32 left_rear_position
+int32 right_front_position
+int32 right_rear_position
+
+int16 left_front_current
+int16 left_rear_current
+int16 right_front_current
+int16 right_rear_current
+
+int16 error
+
+bool calibrated
+bool running

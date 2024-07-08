@@ -1,0 +1,10 @@
+int64 timestamp
+float32 turning_radius
+float32[4] angles
+float32 center_velocity
+float32[4] angular_velocities
+float32 crab_angle
+bool calibrate
+bool run
+bool stop
+bool torque
