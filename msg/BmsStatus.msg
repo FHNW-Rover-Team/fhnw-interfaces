@@ -1,5 +1,5 @@
-std_msgs/String status_system
-std_msgs/String status_bms
+string status_system
+string status_bms
 
 float32 voltage
 float32 current
