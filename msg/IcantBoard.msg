@@ -1,0 +1,11 @@
+uint8   register_index
+string  name
+string  unit
+string  datatype
+string  permission
+float32 value
+float32 min_value
+float32 max_value
+float32 startup_value
+float32 safety_value
+uint32  cyclic_update_time
