@@ -1,0 +1,29 @@
+string group_name
+
+uint8 TARGET_POSE=0
+uint8 TARGET_JOINTS=1
+uint8 target_type
+
+geometry_msgs/PoseStamped target_pose
+string end_effector_link
+
+string[] joint_names
+float64[] joint_positions
+
+bool use_cartesian
+bool avoid_collisions
+
+builtin_interfaces/Duration duration
+
+float64 max_velocity_scaling
+float64 max_acceleration_scaling
+float64 cartesian_eef_step
+float64 cartesian_jump_threshold
+float64 cartesian_fraction_min
+
+---
+bool accepted
+int32 moveit_error_code
+float64 achieved_fraction
+string message
+trajectory_msgs/JointTrajectory planned_trajectory

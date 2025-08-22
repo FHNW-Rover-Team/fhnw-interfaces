@@ -10,6 +10,8 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(trajectory_msgs REQUIRED)
+find_package(builtin_interfaces REQUIRED)
 # Specify the directory where the .msg files are located
 set(msg_files_dir "${CMAKE_CURRENT_SOURCE_DIR}/msg")
 set(srv_files_dir "${CMAKE_CURRENT_SOURCE_DIR}/srv")
@@ -21,7 +23,7 @@ foreach(_file ${_msg_files})
   list(APPEND msg_files "msg/${_file}")
 endforeach()
 
-# Collect all .srv files in the msg directory
+# Collect all .srv files in the srv directory
 file(GLOB _srv_files RELATIVE "${srv_files_dir}" "${srv_files_dir}/*.srv")
 foreach(_file ${_srv_files})
   list(APPEND msg_files "srv/${_file}")
@@ -30,7 +32,7 @@ endforeach()
 # Generate message files
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
-  DEPENDENCIES geometry_msgs
+  DEPENDENCIES geometry_msgs trajectory_msgs builtin_interfaces
 )
 
 
