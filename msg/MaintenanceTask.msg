@@ -1,0 +1,3 @@
+string task_name
+string policy_name
+geometry_msgs/Point location
