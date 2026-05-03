@@ -1,0 +1,4 @@
+geometry_msgs/PointStamped position_start
+geometry_msgs/PointStamped position_target
+geometry_msgs/PointStamped direction_target
+float64 radius
