@@ -1,3 +1,4 @@
+uint8   global_id
 uint8   register_index
 string  name
 string  unit
