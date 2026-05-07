@@ -1,9 +1,0 @@
-uint8[] ids
----
-bool success
-string message
-uint8[] ids_out
-int32[] position_pulses
-float64[] position_rad
-int32[] velocity_raw
-float64[] velocity_rad_per_s

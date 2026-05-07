@@ -1,9 +1,0 @@
-uint8[] ids
----
-bool success
-string message
-uint8[] ids_out
-bool[] torque_enabled
-uint8[] hardware_error_bits
-float32[] voltage_v
-int8[] temperature_c

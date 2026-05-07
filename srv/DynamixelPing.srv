@@ -1,7 +1,0 @@
-uint8[] ids
----
-bool success
-string message
-uint8[] responding_ids
-uint16[] model_numbers
-uint8[] firmware_versions

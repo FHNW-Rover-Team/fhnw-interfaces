@@ -1,6 +1,0 @@
-bool enable
-uint8[] ids
----
-bool success
-string message
-uint8[] failed_ids
