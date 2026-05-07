@@ -1,0 +1,16 @@
+# Manual per-step jog. Rejected while homing is active.
+# MODE_AXIS  (0): index = joint index 0..5; axes 4/5 apply diffwrist coupling.
+# MODE_MOTOR (1): index = motor ID; pure single-motor delta, no coupling.
+uint8 MODE_AXIS=0
+uint8 MODE_MOTOR=1
+uint8 mode
+uint8 index
+int32 delta_pulses
+bool wait_until_reached
+---
+bool success
+string message
+uint8[] ids_out        # motor IDs commanded (1 in MOTOR mode, 2 in AXIS mode for 4/5)
+int32[] start_pulses   # Present_Position before the jog
+int32[] target_pulses  # Goal_Position written
+int32[] end_pulses     # Present_Position after wait (empty when wait_until_reached=false)
