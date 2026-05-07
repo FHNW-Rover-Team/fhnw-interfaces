@@ -1,0 +1,9 @@
+uint8 STOP=0
+uint8 FULL=1
+uint8 PREHOME_ONLY=2
+uint8 DIFFWRIST_ONLY=3
+uint8 command
+---
+bool accepted
+bool is_running
+string message
