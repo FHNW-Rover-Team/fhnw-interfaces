@@ -12,9 +12,11 @@ find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(trajectory_msgs REQUIRED)
 find_package(builtin_interfaces REQUIRED)
-# Specify the directory where the .msg files are located
-set(msg_files_dir "${CMAKE_CURRENT_SOURCE_DIR}/msg")
-set(srv_files_dir "${CMAKE_CURRENT_SOURCE_DIR}/srv")
+find_package(action_msgs REQUIRED)
+# Specify the directory where the .msg/.srv/.action files are located
+set(msg_files_dir    "${CMAKE_CURRENT_SOURCE_DIR}/msg")
+set(srv_files_dir    "${CMAKE_CURRENT_SOURCE_DIR}/srv")
+set(action_files_dir "${CMAKE_CURRENT_SOURCE_DIR}/action")
 
 # Collect all .msg files in the msg directory
 file(GLOB _msg_files RELATIVE "${msg_files_dir}" "${msg_files_dir}/*.msg")
@@ -29,10 +31,16 @@ foreach(_file ${_srv_files})
   list(APPEND msg_files "srv/${_file}")
 endforeach()
 
-# Generate message files
+# Collect all .action files in the action directory
+file(GLOB _action_files RELATIVE "${action_files_dir}" "${action_files_dir}/*.action")
+foreach(_file ${_action_files})
+  list(APPEND msg_files "action/${_file}")
+endforeach()
+
+# Generate message/service/action files
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
-  DEPENDENCIES geometry_msgs trajectory_msgs builtin_interfaces
+  DEPENDENCIES geometry_msgs trajectory_msgs builtin_interfaces action_msgs
 )
 
 

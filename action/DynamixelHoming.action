@@ -1,0 +1,13 @@
+# Goal — command constants match the retired DynamixelHoming.srv for muscle-memory continuity
+uint8 FULL=1
+uint8 PREHOME_ONLY=2
+uint8 DIFFWRIST_ONLY=3
+uint8 command
+---
+# Result
+bool success
+uint8 result_code   # uses HomingStatus.RESULT_* constants
+string message
+---
+# Feedback — same schema as the latched ~/dynamixel/homing_status topic
+fhnw_interfaces/HomingStatus status
