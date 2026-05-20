@@ -1,0 +1,4 @@
+---
+ToolInfo[] tools
+bool success
+string message

@@ -1,0 +1,14 @@
+# Goal
+string target_frame
+geometry_msgs/Pose target_pose
+string source_frame
+string mode # 'aruco', 'tof_distance_locked'
+bool keep_orientation
+---
+# Result
+bool success
+string message
+---
+# Feedback
+float32 current_distance
+geometry_msgs/Pose current_error
