@@ -1,0 +1,10 @@
+# Goal
+string camera_topic   # Topic to subscribe to, e.g. /camera/image_raw. If empty, default is used.
+---
+# Result
+bool success
+string message
+---
+# Feedback
+float32 alignment_error   # Current normalized visual offset or center error
+int32 total_steps         # Number of steps executed so far
