@@ -1,0 +1,16 @@
+# Goal
+float64 linear_speed
+float64 linear_distance
+float64 angular_speed
+float64 angular_distance
+bool linear_only
+---
+# Result
+bool success
+string message
+float64 quality
+float64 quality_linear
+float64 quality_angular
+---
+# Feedback
+string current_step
