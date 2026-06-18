@@ -1,0 +1,8 @@
+string SLUG_FI_SWITCH = fi-switch
+string SLUG_BLACK_SWITCH = black-switch
+string SLUG_RED_SWITCH = red-switch
+string SLUG_SOCKET = socket
+
+string slug
+---
+geometry_msgs/Point[] positions
