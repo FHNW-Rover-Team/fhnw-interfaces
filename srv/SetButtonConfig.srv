@@ -1,0 +1,8 @@
+string config_json   # button config JSON in {"buttons": {...}} format (same as config file)
+bool patch           # if true: merge buttons from config_json into current config
+                     # if false: replace entire config with config_json
+bool revert          # load default config from file
+---
+bool success
+string message
+string active_config_json  # active config after the operation
