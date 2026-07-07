@@ -3,9 +3,9 @@
 <package format="3">
   <name>fhnw_interfaces</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>Rover-wide ROS 2 message, service, and action definitions shared across the FHNW rover stack (drivetrain, board/tool detection, dynamixel motor control, sampling drill, and related subsystems).</description>
   <maintainer email="daniel.richner@students.fhnw.ch">ros</maintainer>
-  <license>TODO: License declaration</license>
+  <license>MIT</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
   <buildtool_depend>rosidl_default_generators</buildtool_depend>
