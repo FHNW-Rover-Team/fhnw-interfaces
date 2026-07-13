@@ -1,0 +1,6 @@
+bool joy_node_autonomous_mode
+bool joy_node_crab_lock
+bool joy_node_turning_lock
+float32 joy_node_zero_offset
+float32 joy_node_speed_stage
+bool controller_rot_active
